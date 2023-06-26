@@ -1,0 +1,81 @@
+.s-risk{
+    top: 0;
+
+    h2{
+        font-size: 3.8rem;
+        color: $white;
+        padding-top: $gutter*4;
+        margin-bottom:$gutter*2;
+    }
+
+    p{
+        max-width: 414px;
+        color: $white;
+        margin-bottom: $gutter*2;
+    }
+    .container{
+        height: 300px;
+        background: $main;
+        background: linear-gradient(90deg, rgba(248,90,144,1) 0%, rgba(248,90,144,0.40940126050420167) 81%);
+        position: relative;
+        border-radius: 20px;
+
+        .text{
+            margin-top: 10%;
+            margin-left: 10%;
+            position: relative;
+        }
+
+        .img{
+            background-image: url(../img/mulher-gravida-pouco-saudavel.png);
+            position: absolute;
+            background-repeat: no-repeat;
+            background-position: center center;
+            width: 346px;
+            bottom: 0;
+            right: 40px;
+            height: 397px;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            padding-left: 8rem;
+            border-radius: 6px;
+            background-size: cover;
+    
+        }
+    }
+}
+
+@include responsive(800px) {
+    .s-risk{
+        h2{
+            font-size: 2.8rem;
+            color: $white;
+            padding-top: $gutter*4;
+            margin-bottom:$gutter*2;
+        }
+        .container{
+            background-color: $main;
+            p{
+                max-width: 100%;
+            }
+
+            .btn{
+                width: 80%;
+                margin-top: $gutter;
+                justify-content: center;
+            }
+            .text{
+                margin-top: 20%;
+                margin-left: 0;
+                text-align: center;
+            }
+            .img{
+                display: none;
+            }
+        }
+    }
+}
