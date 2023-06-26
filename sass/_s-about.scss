@@ -2,6 +2,39 @@
     padding-top: 11.2rem;
     padding-bottom: 11.2rem;
 
+    iframe{
+        max-width: 560px;
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        
+        border: $main 5px solid;
+        margin-top: $gutter*4;
+    }
+
+    h3{
+        margin-top: $gutter*6;
+        font-size: 2.2rem;
+        text-align: center;
+        display: flex;
+        align-items:center ;
+        justify-content: center;
+
+        svg{
+            color:$main;
+            border-radius: 8px;
+            width: 50px;
+            height: 40px;
+            padding: 5px;
+            background-color: rgba($main, .2);
+            margin-right: 8px;
+        }
+    }
+
+    h4{
+        text-align: center;
+    }
+
     .container {
         display: flex;
         justify-content: space-between;
