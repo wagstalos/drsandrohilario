@@ -1,0 +1,63 @@
+.s-services {
+    margin-top: 11.2rem;
+    margin-bottom: 11.2rem;
+   
+    .d-flex {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        h3 {
+            font-size: 2.2rem;
+            margin-top: 3.4rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            font-size: 1.6rem;
+            font-weight: 300;
+            max-width: 80%;
+            color: $gray;
+            padding-bottom: 3rem;
+            border-bottom: 1px solid #eaedf0;
+
+            &:last-child {
+                border-bottom: 1px solid transparent;
+            }
+        }
+
+        div {
+            width: 50%;
+
+            &:last-child {
+                flex-direction: row-reverse;
+            }
+        }
+
+        img{
+            transition: .3s all ease-in;
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+
+    }
+}
+
+
+@include responsive(800px) {
+    .s-services{
+        .d-flex{
+            flex-direction: column;
+
+            div{
+                width: 100%;
+            }
+
+            p{
+                max-width: 100%;
+            }
+        }
+    }
+
+}

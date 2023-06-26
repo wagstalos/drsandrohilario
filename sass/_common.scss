@@ -1,0 +1,119 @@
+.title-section,
+mark {
+    font-size: 3.8rem;
+    margin-bottom: 8rem;
+    text-align: center;
+}
+mark {
+    background-color: transparent;
+    color: $main;
+}
+
+iframe{
+    border-radius: $gutter*2;
+    box-shadow: 0px 8px 48px -8px rgba(33,37,41,0.05);
+}
+.subtitle-section {
+    font-size: 1.6rem;
+    text-align: center;
+    font-weight: 700;
+    color: $main;
+    margin-bottom: $gutter;
+}
+
+.tag {
+    border-radius: 10px;
+    color: $main;
+    font-size: 1.2rem;
+    background-color: rgba($main, 0.1);
+    padding: 5px 16px;
+    display: inline-block;
+
+    margin-bottom: 8px;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 300px;
+}
+
+.text-center{
+    text-align: center;
+    justify-content: center;
+}
+
+footer{
+    background-color: $gray-dark;
+    padding: 60px;
+
+    .container{
+        display: flex;
+
+
+        div{
+            width: 25%;
+
+            &:first-child{
+                width: 32%;
+                margin-right: $gutter*2;
+            }
+
+            &:nth-child(2){
+                width: 18%;
+            }
+        }
+    }
+
+    h5{
+        font-size: 1.6rem;
+        color: $main;
+        margin-bottom: $gutter*2;
+    }
+
+
+    a,p,li{
+        color: $white;
+        font-size: 1.6rem;
+        display: flex;
+        align-items: center;
+        margin-bottom: $gutter;
+        font-weight: 300;
+
+        img{
+            margin-right: $gutter;
+        }
+    }
+}
+
+@include responsive(800px) {
+    .title-section,
+    mark {
+        font-size: 2.8rem;
+        margin-bottom: 4rem;
+        text-align: center;
+    }
+
+    footer{
+        padding: 0;
+        padding-top: 40px;
+        .container{
+            flex-direction: column;
+
+            h5{
+                margin-top: $gutter*3;
+            }
+            div{
+                width: 100%;
+
+                &:first-child{
+                    width: 100%;
+                    margin-right: $gutter*2;
+                }
+    
+                &:nth-child(2){
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

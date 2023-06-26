@@ -1,0 +1,131 @@
+.s-about {
+    padding-top: 11.2rem;
+    padding-bottom: 11.2rem;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .s-about--img {
+            width: 50%;
+            position: relative;
+        }
+
+        .s-about--text {
+            width: 45%;
+
+            h2,
+            span {
+                font-size: 3.8rem;
+            }
+
+            h3 {
+                font-size: 2.2rem;
+                color: #7c7b7c;
+                font-weight: 400;
+                margin-bottom: $gutter * 4;
+            }
+
+            h4 {
+                font-size: 1.8rem;
+                color: $main;
+                margin: $gutter 0;
+            }
+
+            p {
+                color: #5f5c6b;
+                margin-bottom: $gutter * 3;
+            }
+
+            .card {
+                padding: 8px;
+                background-color: rgba($main, 0.1);
+                border-radius: 8px;
+
+                height: 158px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            a {
+                color: #00b39b;
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+:root {
+    --swiper-theme-color: #f85a90 !important;
+    --swiper-navigation-size: 20px !important;
+}
+
+.swiper {
+    width: 100%;
+    height: auto;
+}
+
+.swiper-wrapper {
+    padding-bottom: 45px !important;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    top: 90% !important;
+    background-color: $white;
+    padding: 15px;
+    width: 10px !important;
+    border-radius: 5px;
+}
+
+.swiper-button-prev,
+.swiper-rtl .swiper-button-next {
+    left: auto !important;
+    right: 50px !important;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+    bottom: 10px !important;
+    left: 0;
+    width: 100%;
+}
+
+
+@include responsive(800px) {
+    .s-about{
+        padding-bottom: 1.2rem;
+        .container{
+            flex-direction: column;
+
+            .s-about--img{
+                width: 100%;
+            }
+
+            .s-about--text{
+                width: 100%;
+
+                .tag{
+                    margin: 0 auto;
+                    display: table;
+                    margin-bottom: $gutter;
+                }
+
+                h2,span{
+                    font-size: 2.8rem;
+                    text-align: center;
+                }
+                h3{
+                    font-size: 1.8rem;
+                    text-align: center;
+                }
+            }
+
+            
+        }
+    }
+}

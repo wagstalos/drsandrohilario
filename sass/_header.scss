@@ -1,0 +1,103 @@
+header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 8.2rem;
+    background-color: $white;
+    display: flex;
+    .container {
+        @include flex(row, center, space-between);
+    }
+    .itens {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 70%;
+    }
+    nav {
+        ul {
+            display: flex;
+
+            a {
+                color: $blue-dark;
+                font-size: 1.6rem;
+                transition: all 0.2s ease;
+                margin-bottom: 5px;
+                height: 50px;
+
+                &:hover {
+                    color: $main;
+                    border-bottom: 2px $main solid;
+                }
+            }
+            li {
+                margin-right: 56px;
+                font-size: 1.6rem;
+            }
+        }
+    }
+    .icon-menu-mobile {
+        display: none;
+        .menu-mobile {
+            flex-direction: column;
+            position: absolute;
+            top:0;
+            left: 0;
+            backdrop-filter: blur(10px); /* Define o nível de desfoque */
+            opacity: 0.8; /* Define a opacidade do efeito */
+            color: $main;
+            align-items: center;
+            padding: 20px;
+            border-radius: 10px;
+            display: none;
+            z-index: 101;
+            width: 100%;
+            height: 100vh;
+            position: fixed;
+            text-align: center;
+
+            .icon-tabler-x{
+                float: right;
+            }
+
+            svg{
+                color: $main;
+                margin-top: $gutter;
+            }
+
+            ul{
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                top: 40%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                li{
+                    margin: 0;
+                   margin-bottom: $gutter*2;
+                   font-size: 1.8rem;
+
+                }
+            }
+        }
+        .active {
+            display: block;
+            animation-name: fadein;
+            animation-duration: 1s;
+            animation-fill-mode: forwards;
+        }
+    }
+}
+
+@include responsive(800px) {
+    header {
+
+        .itens {
+            display: none;
+        }
+        .icon-menu-mobile {
+            display: block;
+            cursor: pointer;
+        }
+    }
+}

@@ -1,0 +1,48 @@
+.s-brand {
+    padding-top: 11.2rem;
+    margin-bottom: 92px;
+    margin: 0 auto;
+    .container {
+        display: flex;
+        align-items: center;
+
+        background-color: #f9f9f9;
+        border: 8px;
+        border-radius: 16px;
+    }
+    h4 {
+        color: $gray;
+        font-size: 1.6rem;
+        font-weight: 400;
+        width: 50%;
+        margin-right: 2.4rem;
+        padding: 1.6rem;
+    }
+    .s-brand__logos {
+        display: flex;
+        img {
+            margin-right: $gutter * 2;
+            height: 50px;
+        }
+    }
+}
+
+@include responsive(800px) {
+    .s-brand {
+        .container {
+            flex-direction: column;
+            h4 {
+                margin-right: 0;
+                width: 100%;
+                text-align: center;
+            }
+            .s-brand__logos {
+                flex-direction: column;
+                img {
+                    margin-right: 0;
+                    height: 50px;
+                }
+            }
+        }
+    }
+}

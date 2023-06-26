@@ -1,0 +1,62 @@
+.s-documents {
+    background-color: #f7f8fa;
+    padding: 50px;
+    .container {
+        border-radius: 8px;
+    }
+
+    h2 {
+        font-size: 3.4rem;
+        margin-bottom: 2rem;
+    }
+
+    p {
+        max-width: 500px;
+    }
+
+    .s-documents--download{
+        background-color: $white;
+        margin-top: $gutter*2;
+        border-radius: 8px;
+        padding: $gutter*3 $gutter*2 $gutter $gutter*2;
+        box-shadow: 0px 8px 48px -8px rgba(33,37,41,0.05);
+    }
+
+    .btn {
+        // margin-top: $gutter * 2;
+        border: 1px solid $main;
+        height: 4rem;
+        margin-bottom: 20px;
+        margin-right: $gutter;
+
+        &:hover{
+            background-color: $main;
+            color: $white;
+        }
+
+        
+        svg{
+            margin-right: $gutter;
+        }
+    }
+}
+
+
+@include responsive(800px) {
+    .s-documents{
+        padding: 0;
+        width: 100%;
+
+        .btn-light{
+            padding: $gutter;
+            font-size: 1.4rem;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            /* Outros estilos do botão */
+            padding: 0;
+            border: none;
+        }
+    }
+
+}
