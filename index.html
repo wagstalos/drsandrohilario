@@ -10,9 +10,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dr. Sandro Hilário</title>
-    <link rel="stylesheet" type="text/css" href="/path/to/modal-video.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/main.min.css">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-168636576-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-168636576-1');
+    </script>
 </head>
 
 <body>
@@ -112,7 +120,7 @@
     <section class="s-hero">
         <div class="container s-hero__row">
 
-            <div class="s-hero__col--1">
+            <div class="s-hero__col--1" data-aos="fade-right">
                 <div class="tag">Médico Ginecologista e Obstreta</div>
                 <h1>Dr. Sandro Garcia <br> Hilário</h1>
                 <p> "Humanizar o parto é faze-lo com amor e respeito
@@ -145,7 +153,7 @@
 
 
             </div>
-            <div class="s-hero__col--2">
+            <div class="s-hero__col--2" data-aos="zoom-in">
                 <img src="img/hero.png" class="thumb-image" />
 
             </div>
@@ -153,7 +161,7 @@
 
     </section>
 
-    <section class="s-brand">
+    <section class="s-brand" data-aos="flip-up">
         <div class="container">
             <h4>Atuamos nos principais hospitais e maternidades de São Paulo, garantindo um atendiemento integral às
                 necessidades das pacientes.</h4>
@@ -168,7 +176,7 @@
 
     <div class="s-about" id="sobre">
         <div class="container">
-            <div class="s-about--img">
+            <div class="s-about--img" data-aos="fade-right">
                 <img src="img/sandro.png" alt="">
                 <img src="img/selo.svg" class="stamp rotate" />
             </div>
@@ -276,13 +284,14 @@
                 principal patrimônio</h2>
 
             <div class="d-flex">
-                <div>
+                <div data-aos="fade-up">
 
                     <h3>Pré Natal</h3>
                     <p>Este é o momento mais importante da vida de uma mulher, uma gestação bem assistida e um parto
                         adequado podem garantir uma vida plena e saudável.</p>
 
                     <h3>Ginecologia</h3>
+
                     <p>Ao longo da vida da mulher muitas são as ameaças a sua saúde, desde a adolesência a menopausa
                         deve estar sempre bem assistida por um especialista que possa identificar e tratar
                         adequadamente
@@ -294,8 +303,8 @@
 
                 </div>
 
-                <div>
-                    <img src="img/mulheres.png" alt="">
+                <div data-aos="zoom-out">
+                    <img src="img/mulheres.png" alt="imagens de mulheres" title="imagens de mulheres">
                 </div>
 
             </div>
@@ -304,7 +313,7 @@
 
     </section>
 
-    <section class="s-documents" id="documentos">
+    <section class="s-documents" id="documentos" data-aos="fade-up">
         <div class="container">
             <div>
                 <h2>Documentos</h2>
@@ -446,7 +455,7 @@
 
     <footer>
 
-        <div class="container">
+        <div class="container border-bottom">
 
             <div>
                 <h5>Dr. Sandro Hilário</h5>
@@ -505,6 +514,17 @@
 
         </div>
 
+        <div class="container wps-games">
+            <span>
+                Desenvolvido por: <a href="https://wpsgames.com.br/"> <img src="https://wpsgames.com.br/img/logo.png"
+                        alt="wps games" width="30px" title="WPS Games"></a>
+            </span>
+
+            <span>
+                © Copyright 2023. Todos os direitos reservados.
+            </span>
+        </div>
+
     </footer>
 
 
@@ -513,6 +533,13 @@
     <script src="js/main.js"></script>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
 
     <!-- Initialize Swiper -->
     <script>

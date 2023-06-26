@@ -43,12 +43,16 @@ iframe{
 }
 
 footer{
-    background-color: $gray-dark;
-    padding: 60px;
+    background-color: $white;
+    padding: 60px 60px 0 60px;
+    border-top: 1px solid $gray-light;
+
+    .border-bottom{
+        border-bottom: 1px solid $gray-light;
+    }
 
     .container{
         display: flex;
-
 
         div{
             width: 25%;
@@ -70,17 +74,37 @@ footer{
         margin-bottom: $gutter*2;
     }
 
-
     a,p,li{
-        color: $white;
+        color: $gray-dark;
         font-size: 1.6rem;
         display: flex;
         align-items: center;
         margin-bottom: $gutter;
         font-weight: 300;
+        transition: color .3s ease-in;
 
         img{
             margin-right: $gutter;
+        }
+
+        &:hover{
+            color: $main;
+        }
+    }
+
+    .wps-games{
+        justify-content: space-between;
+        align-items: center;
+        color: $gray-dark;
+        margin-top: $gutter*2;
+
+        span{
+            display: flex;
+            align-items: center;
+
+            img{
+                margin-left: $gutter;
+            }
         }
     }
 }
