@@ -5,7 +5,6 @@ botoes.addEventListener("click", () => {
   menuMobile.classList.toggle("active");
 });
 
-
 // Função para abrir o modal com o vídeo
 function openModal(videoId) {
   var videoModal = document.getElementById("videoModal");
@@ -70,3 +69,28 @@ async function handleSubmit(event) {
     });
 }
 form.addEventListener("submit", handleSubmit);
+
+// Selecionar todos os links de navegação
+const links = document.querySelectorAll('a[href^="#"]');
+
+// Adicionar um listener de evento de clique a cada link
+links.forEach((link) => {
+  link.addEventListener("click", (e) => {
+    e.preventDefault(); // Prevenir o comportamento padrão do clique no link
+
+    // Obter o alvo do link (o elemento com o ID correspondente ao valor do atributo href)
+    const target = document.querySelector(link.getAttribute("href"));
+
+    // Verificar se o alvo existe
+    if (target) {
+      // Calcular a posição de rolagem do alvo em relação ao topo da página
+      const scrollTop = target.getBoundingClientRect().top + window.pageYOffset;
+
+      // Animar a rolagem suave até o alvo
+      window.scrollTo({
+        top: scrollTop,
+        behavior: "smooth",
+      });
+    }
+  });
+});
