@@ -40,7 +40,8 @@
                 flex-direction: column;
                 img {
                     margin-right: 0;
-                    height: 50px;
+                    margin-bottom: $gutter*2;
+                    object-fit:contain;
                 }
             }
         }

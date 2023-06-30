@@ -176,6 +176,9 @@
                 }
             }
 
+            .s-hero__col--2{
+                margin-top: $gutter*4;
+            }
            
         }
     }
@@ -218,7 +221,7 @@
   
   .close:hover,
   .close:focus {
-    color: #f85a90;
+    color: $main;
     text-decoration: none;
     cursor: pointer;
   }
