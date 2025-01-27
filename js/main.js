@@ -5,6 +5,20 @@ botoes.addEventListener("click", () => {
   menuMobile.classList.toggle("active");
 });
 
+//btn-whats show and hide
+document.addEventListener("DOMContentLoaded", function () {
+  const btnWhats = document.querySelector(".btn-whats");
+
+  window.addEventListener("scroll", function () {
+    if (window.scrollY > 100) {
+      // Mostra o botão ao rolar mais de 100px
+      btnWhats.style.display = "block"; // Exibe o botão
+    } else {
+      btnWhats.style.display = "none"; // Esconde o botão
+    }
+  });
+});
+
 // Função para abrir o modal com o vídeo
 function openModal(videoId) {
   var videoModal = document.getElementById("videoModal");
@@ -91,6 +105,20 @@ links.forEach((link) => {
         top: scrollTop,
         behavior: "smooth",
       });
+    }
+  });
+});
+
+//btn whats scroll
+document.addEventListener("DOMContentLoaded", function () {
+  const btnWhats = document.querySelector(".btn-whats");
+
+  window.addEventListener("scroll", function () {
+    if (window.scrollY > 100) {
+      // Mostra o botão ao rolar mais de 100px
+      btnWhats.style.display = "block"; // Exibe o botão
+    } else {
+      btnWhats.style.display = "none"; // Esconde o botão
     }
   });
 });

@@ -82,6 +82,10 @@
 
                 .btn-primary {
                     margin-right: $gutter * 2;
+
+                    svg{
+                        margin-left: $gutter;
+                    }
                 }
 
                 .btn-video {

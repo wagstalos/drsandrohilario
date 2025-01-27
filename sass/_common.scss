@@ -9,9 +9,9 @@ mark {
     color: $main;
 }
 
-iframe{
-    border-radius: $gutter*2;
-    box-shadow: 0px 8px 48px -8px rgba(33,37,41,0.05);
+iframe {
+    border-radius: $gutter * 2;
+    box-shadow: 0px 8px 48px -8px rgba(33, 37, 41, 0.05);
 }
 .subtitle-section {
     font-size: 1.6rem;
@@ -37,72 +37,75 @@ iframe{
     height: 300px;
 }
 
-.text-center{
+.text-center {
     text-align: center;
     justify-content: center;
 }
 
-footer{
+footer {
     background-color: #fbfbfb;
     padding: 60px 60px 0 60px;
     border-top: 1px solid $gray-light;
 
-    .border-bottom{
+    .border-bottom {
         border-bottom: 1px solid $gray-light;
     }
 
-    .container{
+    .container {
         display: flex;
 
-        div{
+        div {
             width: 25%;
 
-            &:first-child{
+            &:first-child {
                 width: 32%;
-                margin-right: $gutter*2;
+                margin-right: $gutter * 2;
             }
 
-            &:nth-child(2){
+            &:nth-child(2) {
                 width: 18%;
             }
         }
     }
 
-    h5{
+    h5 {
         font-size: 1.6rem;
         color: $main;
-        margin-bottom: $gutter*2;
+        margin-bottom: $gutter * 2;
     }
 
-    a,p,li{
+    a,
+    p,
+    li {
         color: $gray-dark;
         font-size: 1.6rem;
         display: flex;
         align-items: center;
         margin-bottom: $gutter;
         font-weight: 300;
-        transition: color .3s ease-in;
+        transition: color 0.3s ease-in;
 
-        img{
+        img {
             margin-right: $gutter;
         }
 
-        &:hover{
+        &:hover {
             color: $main;
         }
     }
 
-    .wps-games{
+    .wps-games {
         justify-content: space-between;
-        align-items: center;
+        // align-items: center;
         color: $gray-dark;
-        margin-top: $gutter*2;
+        margin-top: $gutter * 2;
+        margin-bottom: $gutter * 2;
 
-        span{
+        span {
             display: flex;
             align-items: center;
 
-            img{
+            img {
                 margin-left: $gutter;
             }
         }
@@ -117,30 +120,29 @@ footer{
         text-align: center;
     }
 
-    footer{
+    footer {
         padding: 0;
         padding-top: 40px;
-        .container{
+        .container {
             flex-direction: column;
 
-            h5{
-                margin-top: $gutter*3;
+            h5 {
+                margin-top: $gutter * 3;
             }
-            div{
+            div {
                 width: 100%;
 
-                &:first-child{
+                &:first-child {
                     width: 100%;
-                    margin-right: $gutter*2;
+                    margin-right: $gutter * 2;
 
                     display: contents;
                 }
-    
-                &:nth-child(2){
+
+                &:nth-child(2) {
                     width: 100%;
                 }
             }
         }
     }
 }
-
