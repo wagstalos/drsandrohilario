@@ -10,9 +10,10 @@
 
 .rotate {
 	position: absolute;
+	width: 120px;
 
-	top: 61px;
-	right: 32px;
+	top: 4px;
+	left: 0;
 
 	-webkit-animation: spin 4s linear infinite;
 	-moz-animation: spin 4s linear infinite;
@@ -39,8 +40,12 @@
 }
 
 @include responsive(800px) {
-	
+	// .rotate {
+	// 	display: none;
+	// }
+
 	.rotate {
-		display: none;
+		top: 4px;
+		left: 0;
 	}
 }
