@@ -52,5 +52,13 @@
     a {
         margin: 0;
         color: $white;
+
+        svg{
+            margin-right: $gutter/2;
+        }
+
+        &:hover{
+            color: rgba($white, .8);
+        }
     }
 }
